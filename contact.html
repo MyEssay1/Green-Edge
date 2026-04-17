@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Free Estimate | Green Edge Landscaping</title>
+  <meta name="description" content="Request a free estimate from Green Edge Landscaping. Serving Washington and Waukesha County, Wisconsin." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <div class="nav-logo-icon"></div>
+      <span><em>Green Edge</em> Landscaping</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta active">Free Estimate</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <span class="section-label">Get In Touch</span>
+      <h1>Request a Free Estimate</h1>
+      <p>Fill out the form below or give us a call. We'll get back to you quickly to schedule a time that works for you.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap reveal">
+        <h2>Tell Us About Your Property</h2>
+        <p>All estimates are completely free — no obligation to book.</p>
+
+        <form id="estimateForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(262) 000-0000" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Property Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St, West Bend, WI" required />
+          </div>
+
+          <div class="form-group">
+            <label for="county">County</label>
+            <select id="county" name="county" required>
+              <option value="" disabled selected>Select your county</option>
+              <option value="Washington County">Washington County</option>
+              <option value="Waukesha County">Waukesha County</option>
+              <option value="Other">Other (please describe in message)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="services">Services Interested In</label>
+            <select id="services" name="services" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Groundskeeping">Groundskeeping</option>
+              <option value="Mulching">Mulching</option>
+              <option value="Tree Pruning & Trimming">Tree Pruning &amp; Trimming</option>
+              <option value="Weed Maintenance">Weed Maintenance</option>
+              <option value="Multiple Services">Multiple Services</option>
+              <option value="Not Sure">Not Sure — Need Recommendation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us More (Optional)</label>
+            <textarea id="message" name="message" placeholder="Describe your property, what you're looking for, or any questions you have..."></textarea>
+          </div>
+
+          <!-- Hidden field to identify the form -->
+          <input type="hidden" name="_subject" value="New Estimate Request — Green Edge Landscaping" />
+          <input type="hidden" name="_replyto" value="Greenedgelandscapingwi@gmail.com" />
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 1rem;">
+              Submit Estimate Request
+            </button>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            ✅ Thanks! We received your request and will be in touch shortly.
+          </div>
+        </form>
+      </div>
+
+      <!-- INFO CARD -->
+      <div class="contact-info-card reveal">
+        <h3>Contact Us Directly</h3>
+
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <div class="info-label">Nathan Haga</div>
+            <div class="info-value">
+              <a href="tel:2627440024">(262) 744-0024</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <div class="info-label">Alec Welch</div>
+            <div class="info-value">
+              <a href="tel:2622390732">(262) 239-0732</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <div class="info-label">Email</div>
+            <div class="info-value">
+              <a href="mailto:Greenedgelandscapingwi@gmail.com">Greenedgelandscapingwi<br>@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">Service Area</div>
+            <div class="info-value">
+              Washington County, WI<br>
+              Waukesha County, WI
+            </div>
+          </div>
+        </div>
+
+        <div class="estimate-note">
+          🌿 <strong>All estimates are 100% free.</strong><br />
+          We'll walk your property and give you a clear, honest quote — no pressure, no obligation.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="nav-logo-icon"></div>
+          <span><em>Green Edge</em> Landscaping</span>
+        </div>
+        <p>Professional landscaping services for Washington and Waukesha County, Wisconsin.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="contact-item">
+          <span class="contact-item-icon">📞</span>
+          <span>Nathan: <a href="tel:2627440024">(262) 744-0024</a></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">📞</span>
+          <span>Alec: <a href="tel:2622390732">(262) 239-0732</a></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">✉️</span>
+          <span><a href="mailto:Greenedgelandscapingwi@gmail.com">Greenedgelandscapingwi@gmail.com</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Green Edge Landscaping. All rights reserved.</span>
+      <span>Washington &amp; Waukesha County, Wisconsin</span>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => observer.observe(r));
+
+    // Form submission with Formspree
+    const form = document.getElementById('estimateForm');
+    const success = document.getElementById('formSuccess');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          success.style.display = 'block';
+          btn.textContent = 'Request Sent ✓';
+          btn.style.background = 'var(--green-mid)';
+        } else {
+          btn.textContent = 'Error — Try Again';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Error — Try Again';
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
